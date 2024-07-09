@@ -11,22 +11,20 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('books', function (Blueprint $table) {
+        Schema::create('authors', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->foreignId('author_id')->constrained()->onDelete('cascade');
-            $table->date('published_date');
-            $table->string('isbn')->unique();
-            $table->text('summary');
+            $table->string('name');
+            $table->text('biography');
+            $table->date('date_of_birth');
             $table->timestamps();
         });
     }
-    
+
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('books');
+        Schema::dropIfExists('authors');
     }
 };

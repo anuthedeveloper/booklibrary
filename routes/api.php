@@ -1,12 +1,16 @@
 <?php
+
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\AuthController;
+use Illuminate\Support\Facades\Route;
 
+// Authentication route
 Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
 
-Route::middleware('auth:api')->group(function () {
+// Group routes that require authentication
+// Route::middleware('auth:api')->group(function () {
     // Route::resource('books', BookController::class);
     // Route::resource('authors', AuthorController::class);
 
@@ -21,4 +25,4 @@ Route::middleware('auth:api')->group(function () {
     Route::get('authors/{id}', [AuthorController::class, 'show']);
     Route::put('authors/{id}', [AuthorController::class, 'update']);
     Route::delete('authors/{id}', [AuthorController::class, 'destroy']);
-});
+// });

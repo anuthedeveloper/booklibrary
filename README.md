@@ -1,5 +1,3 @@
-## For Backend Developer
-
 ### Backend Requirements (Primary Focus):
 
 -   API Endpoints:
@@ -44,17 +42,3 @@
     -   Implement search functionality for books and authors.
     -   Add unit and integration tests for API endpoints.
     -   Deploy API on AWS or Azure or any other cloud provider.
-
-    #### Submission Timeline
-
-    -   Duration: 2 weeks from assignment date
-    -   Submission Deadline: July 15th, 2024
-
-    #### Submission Guidelines
-
-    -   Code Repository: Use Git and host on GitHub or GitLab
-    -   README: Include setup instructions, project description, and any relevant information
-    -   Documentation: Ensure code is well-documented with comments where necessary
-        Demo: Provide live demo link if application is deployed
-    -   Email: Send the demo link, GitHub repository URL, and any other necessary links to
-        jointheteam@remoting.work.
